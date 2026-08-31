@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3003:3002"
+    restart: unless-stopped
+    container_name: terminal-chat-app
